@@ -6,16 +6,51 @@ const fs = require('fs').promises;
 // TODO: Create an array of questions for user input
 const questions = [
   {
-    type: 'list',
-    message: 'what coding languages do you know?',
+    type: 'input',
+    message: 'Enter a project title:',
     name: 'title',
-    choices: ['CSS', 'HTML', 'JS']
   },
   {
-    type: 'input',
-    message: 'What is your name?',
-    name: 'name'
-  }
+    type: "editor",
+    message: "After writing your document, save and close the editor - Write a description for your project.",
+    name: "description"
+  },
+  {
+    type: "editor",
+    message: "After writing your document, save and close the editor - Write installation instructions for your project.",
+    name: "install"
+  },
+  {
+    type: "editor",
+    message: "After writing your document, save and close the editor - Write usage instructions for your project.",
+    name: "usage"
+  },
+  {
+    type: "editor",
+    message: "After writing your document, save and close the editor - Write contribution instructions for your project.",
+    name: "contribution"
+  },
+  {
+    type: "editor",
+    message: "After writing your document, save and close the editor - Write testing instructions for your project.",
+    name: "test"
+  },
+  {
+    type: 'list',
+    message: 'Select a License for your project:',
+    name: 'license',
+    choices: ['MIT', 'GPLv2', 'GPLv3', 'Apache', 'Other/None']
+  },
+  {
+    type: "input",
+    message: "Enter your GitHub username:",
+    name: "gitHubUser"
+  },
+  {
+    type: "input",
+    message: "Enter your best contact email:",
+    name: "installInstructions"
+  },
 ];
 
 // TODO: Create a function to write README file
