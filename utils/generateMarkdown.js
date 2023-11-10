@@ -16,17 +16,89 @@ function renderLicenseBadge(license) {
 }
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) { }
+function renderLicenseLink(license) { 
+  switch (license) {
+    case 'MIT':
+      return `[MIT](https://opensource.org/licenses/MIT)`;
+    case 'GPLv2':
+      return `[GPL v2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)`
+    case 'GPLv3':
+      return `[GPL v3](https://www.gnu.org/licenses/gpl-3.0)`
+    case 'Apache':
+      return `[Apache](https://opensource.org/licenses/Apache-2.0)`
+    default:
+      return '';
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) { }
+function renderLicenseSection(license) { 
+  switch (license) {
+    case 'MIT':
+      return `## Project License: 
+### This project uses the ${ license } license
+
+For more information on the license used for this project, and the rights to this project, click on the following link: ${ renderLicenseLink(license) }`;
+
+    case 'GPLv2':
+      return `## Project License: 
+### This project uses the ${ license } license
+
+For more information on the license used for this project, and the rights to this project, click on the following link: ${ renderLicenseLink(license) }`;
+
+    case 'GPLv3':
+      return `## Project License: 
+### This project uses the ${ license } license
+
+For more information on the license used for this project, and the rights to this project, click on the following link: ${ renderLicenseLink(license) }`;
+
+    case 'Apache':
+      return `## Project License: 
+### This project uses the ${ license } license
+
+For more information on the license used for this project, and the rights to this project, click on the following link: ${ renderLicenseLink(license) }`;
+    default:
+      return '';
+  }
+}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown() {
-  return `
+function generateMarkdown({ title, description, install, usage, license, contribution, test, gitHubUser, email }) {
+  return `# ${title} ${renderLicenseBadge(license)}
   
-`;
+## Table of Contents
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Contributing](#contributing)
+5. [Testing](#testing)
+6. [License](#license)
+7. [Questions](#questions)
+
+## Description
+${ description }
+
+## Installation
+${ install }
+
+## Usage
+${ usage }
+
+## Contributing
+${ contribution }
+
+## Testing
+${ test }
+
+${ renderLicenseSection(license) }
+
+## Questions
+For questions the project, I can be contacted through GitHub or via email.
+
+GitHub - https://github.com/${ gitHubUser }
+
+Email - ${ email }`;
 }
 
 module.exports = generateMarkdown;

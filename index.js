@@ -11,28 +11,28 @@ const questions = [
     name: 'title',
   },
   {
-    type: "editor",
-    message: "After writing your document, save and close the editor - Write a description for your project.",
+    type: "input",
+    message: "Write a description for your project.",
     name: "description"
   },
   {
-    type: "editor",
-    message: "After writing your document, save and close the editor - Write installation instructions for your project.",
+    type: "input",
+    message: "Write installation instructions for your project.",
     name: "install"
   },
   {
-    type: "editor",
-    message: "After writing your document, save and close the editor - Write usage instructions for your project.",
+    type: "input",
+    message: "Write usage instructions for your project.",
     name: "usage"
   },
   {
-    type: "editor",
-    message: "After writing your document, save and close the editor - Write contribution instructions for your project.",
+    type: "input",
+    message: "Write contribution instructions for your project.",
     name: "contribution"
   },
   {
-    type: "editor",
-    message: "After writing your document, save and close the editor - Write testing instructions for your project.",
+    type: "input",
+    message: "Write testing instructions for your project.",
     name: "test"
   },
   {
@@ -49,7 +49,7 @@ const questions = [
   {
     type: "input",
     message: "Enter your best contact email:",
-    name: "installInstructions"
+    name: "email"
   },
 ];
 
