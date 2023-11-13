@@ -59,7 +59,7 @@ For more information on the license used for this project, and the rights to thi
 
 For more information on the license used for this project, and the rights to this project, click on the following link: ${ renderLicenseLink(license) }`;
     default:
-      return '';
+      return '## Project License:';
   }
 }
 

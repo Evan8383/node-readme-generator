@@ -1,4 +1,4 @@
-#  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# asf 
   
 ## Table of Contents
 1. [Description](#description)
@@ -10,28 +10,25 @@
 7. [Questions](#questions)
 
 ## Description
-
+sd
 
 ## Installation
-
+s
 
 ## Usage
-
+s
 
 ## Contributing
-
+s
 
 ## Testing
+s
 
 
-## Project License: 
-### This project uses the MIT license
-
-For more information on the license used for this project, and the rights to this project, click on the following link: [MIT](https://opensource.org/licenses/MIT)
 
 ## Questions
 For questions the project, I can be contacted through GitHub or via email.
 
-GitHub - https://github.com/
+GitHub - https://github.com/s
 
-Email - 
+Email - s
